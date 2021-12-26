@@ -1,4 +1,7 @@
-const sqlite3 = require('sqlite3');
+/**
+ * @see https://github.com/louislam/node-sqlite3
+ */
+ const sqlite3 = require('@louislam/sqlite3');
 const { open } = require('sqlite');
 const { DB } = require('@config');
 
