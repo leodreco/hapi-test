@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const routes = require('./routes');
 const migrate = require('./db/migrate');
 const dotenv = require('dotenv');
+const { APP_DOMAIN, PORT } = require('./config');
 
 const app = express();
 dotenv.config();
@@ -26,9 +27,8 @@ async function main(){
         });
     });
     
-    const port = process.env.PORT || 3000;
-    app.listen(port, () => {
-        console.log(`Servidor en ${process.env.APP_DOMAIN || 'http://localhost'}:${3000}`);
+    app.listen(PORT, () => {
+        console.log(`Servidor en ${APP_DOMAIN}:${PORT}`);
     });
 }
 

@@ -1,5 +1,5 @@
 const decryptCaesar = require('@shreyravi/decrypt-caesar');
-const shift = process.env.CAESAR_SHIFT || 3;
+const { CAESAR_SHIFT } = require('./config');
 
 function decryptor(messages){
     let arr = [];
@@ -14,7 +14,7 @@ function decryptor(messages){
             index++;
         }
     }
-    return decryptCaesar(arr.join(' '))[25 - shift];
+    return decryptCaesar(arr.join(' '))[25 - CAESAR_SHIFT];
 }
 
 module.exports = decryptor;

@@ -1,10 +1,11 @@
 const sqlite3 = require('sqlite3');
 const { open } = require('sqlite');
+const { DB } = require('../config');
 
 class DaoSatellite {
     static connection(){
         return open({
-            filename: process.env.DB || 'db.sqlite',
+            filename: DB,
             driver: sqlite3.Database
         });
     }
