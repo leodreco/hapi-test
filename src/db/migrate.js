@@ -1,7 +1,7 @@
 const sqlite3 = require('sqlite3');
 const { open } = require('sqlite');
+const { DB } = require('@config');
 const path = require('path');
-const { DB } = require('../config');
 
 async function run(){
     const db = await open({

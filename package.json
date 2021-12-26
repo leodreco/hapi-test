@@ -26,6 +26,7 @@
   },
   "_moduleAliases": {
     "@Exceptions" : "src/Exceptions",
+    "@config" : "src/config.js",
     "@Schemas" : "src/Schemas",
     "@routes" : "src/routes",
     "@util" : "src/util",

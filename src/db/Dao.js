@@ -1,6 +1,6 @@
 const sqlite3 = require('sqlite3');
 const { open } = require('sqlite');
-const { DB } = require('../config');
+const { DB } = require('@config');
 
 class Dao {
     static connection(){

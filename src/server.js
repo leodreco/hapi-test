@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const routes = require('./routes');
 const migrate = require('@db/migrate');
 const dotenv = require('dotenv');
-const { APP_DOMAIN, PORT } = require('./config');
+const { APP_DOMAIN, PORT } = require('@config');
 
 const app = express();
 dotenv.config();
