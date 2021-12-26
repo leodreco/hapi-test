@@ -18,19 +18,20 @@
     "module-alias": "^2.2.2",
     "sqlite": "^4.0.23",
     "sqlite3": "^5.0.2",
-    "trilateration": "0.0.1",
     "validate": "^5.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
   "_moduleAliases": {
-    "@Exceptions" : "src/Exceptions",
-    "@config" : "src/config.js",
-    "@Schemas" : "src/Schemas",
-    "@routes" : "src/routes",
-    "@util" : "src/util",
-    "@db" : "src/db"
+    "@Exceptions": "src/Exceptions",
+    "@config": "src/config.js",
+    "@Schemas": "src/Schemas",
+    "@routes": "src/routes",
+    "@util": "src/util",
+    "@db": "src/db"
   },
-  "_moduleDirectories": ["node_modules_custom"]
+  "_moduleDirectories": [
+    "node_modules_custom"
+  ]
 }
