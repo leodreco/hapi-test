@@ -1,7 +1,8 @@
+require('module-alias/register');
 const express = require('express');
 const bodyParser = require('body-parser');
 const routes = require('./routes');
-const migrate = require('./db/migrate');
+const migrate = require('@db/migrate');
 const dotenv = require('dotenv');
 const { APP_DOMAIN, PORT } = require('./config');
 

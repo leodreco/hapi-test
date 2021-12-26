@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const satelliteRoutes = require('./routes/satellite');
+const satelliteRoutes = require('@routes/satellite');
 
 router.use('/satellite', satelliteRoutes);
 
