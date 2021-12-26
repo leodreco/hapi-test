@@ -1,15 +1,6 @@
-const sqlite3 = require('sqlite3');
-const { open } = require('sqlite');
-const { DB } = require('../config');
+const Dao = require('./Dao');
 
-class DaoSatellite {
-    static connection(){
-        return open({
-            filename: DB,
-            driver: sqlite3.Database
-        });
-    }
-
+class DaoSatellite extends Dao {
     static async get(){
         const db = await DaoSatellite.connection();
         let data = await db.all("SELECT * FROM points");
