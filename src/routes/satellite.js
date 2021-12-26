@@ -2,8 +2,8 @@ const ValidationExeption = require('@Exceptions/ValidationExeption');
 const ApiExeption = require('@Exceptions/ApiExeption');
 const { Satellites, satelliteSchema } = require('@Schemas/Satellites');
 const router = require('express').Router();
-const decryptor = require('../decryptor');
-const triangulate = require('../triangulator3000');
+const decryptor = require('@util/decryptor');
+const triangulate = require('@util/triangulator3000');
 const DaoSatellite = require('@db/DaoSatellite');
 
 /**

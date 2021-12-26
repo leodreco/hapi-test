@@ -1,5 +1,5 @@
 const decryptCaesar = require('@shreyravi/decrypt-caesar');
-const { CAESAR_SHIFT } = require('./config');
+const { CAESAR_SHIFT } = require('../config');
 
 function decryptor(messages){
     let arr = [];

@@ -28,6 +28,7 @@
     "@Exceptions" : "src/Exceptions",
     "@Schemas" : "src/Schemas",
     "@routes" : "src/routes",
+    "@util" : "src/util",
     "@db" : "src/db"
   },
   "_moduleDirectories": ["node_modules_custom"]
